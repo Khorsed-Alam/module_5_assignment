@@ -22,11 +22,11 @@ class profile_Screen extends StatelessWidget {
                 children: [
                   Icon(Icons.add,color: Colors.black,),
                   SizedBox(
-                    width: 10,
+                    width: 15,
                   ),
                   Icon(Icons.settings, color: Colors.black,),
                   SizedBox(
-                    width: 10,
+                    width: 15,
                   ),
                   Icon(Icons.call, color: Colors.black,),
 
@@ -37,15 +37,62 @@ class profile_Screen extends StatelessWidget {
         ),
       ),
 
-      body:Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Center(
+        child: Column(
 
-        children: [
-          Container(
-            height: 150,
-          )
-        ],
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                radius: 80,
+                backgroundColor:Colors.purple.shade100,
+                child: Icon(
+                  Icons.icecream,
+                  color: Colors.deepPurple,
+                  size: 60,
+                ),
+              ),
 
+            ),
+            SizedBox(
+              height: 6,
+            ),
+            Text("Ice Cream is very delicious right ?",
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.bold,
+            ),),
+
+
+            SizedBox(
+              height:30,
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                radius: 80,
+                backgroundColor:Colors.purple.shade100,
+                child: Icon(
+                  Icons.code,
+                  color: Colors.deepPurple,
+                  size: 60,
+                ),
+              ),
+
+            ),
+            SizedBox(
+              height: 6,
+            ),
+            Text("Programming is not boring if you love it ?",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.bold,
+              ),),
+
+
+          ],
+        ),
       ),
 
     );
