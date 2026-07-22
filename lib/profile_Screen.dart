@@ -86,7 +86,7 @@ class profile_Screen extends StatelessWidget {
             ),
             Text("Programming is not boring if you love it ?",
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),),
 
